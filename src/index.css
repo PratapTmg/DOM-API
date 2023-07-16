@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(92, 60, 60);
+}
+#root{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-button{
+    display: flex;
+    justify-content: space-around;
+}
+.stories-div{
+    text-align: center;
+    width: 50%;
+    padding: 2em 0 0 0;
+}
+li.card{
+    margin: 2em 0;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    padding: 0.5em 0;
+}
+.readMore{
+    color: rebeccapurple;
+    text-decoration: none;
+}
+.delete{
+    color:red;
+    text-decoration: none;
+}
+h2.title{
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.authorComment{
+    font-size: 0.7rem;
+}
+.span{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.pagination_btn{
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.pagination_btn p{
+    padding: 0;
+    color: #fff;
+    margin: 0;
+}
+.pagination_btn button{
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.2em ;
+    border: none;
+    margin: 0 1.5em;
+}
+.search-input{
+    padding: 0.5em;
+    width: 55%;
+    border-radius: 12px;
 }
